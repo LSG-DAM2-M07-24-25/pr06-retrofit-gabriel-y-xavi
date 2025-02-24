@@ -55,6 +55,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\gabri\\Pictures\\android-studio-Retrofit-App-Naruto-main\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "88",
+                        "endOffsets": "140"
+                    },
+                    "to": {
+                        "startLines": "236",
+                        "startColumns": "4",
+                        "startOffsets": "14969",
+                        "endColumns": "87",
+                        "endOffsets": "15052"
+                    }
+                },
+                {
                     "source": "C:\\Users\\gabri\\.gradle\\caches\\8.9\\transforms\\87630bae0895fb1383b32991ae86e6ca\\transformed\\glide-5.0.0-rc01\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -106,6 +123,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\gabri\\Pictures\\android-studio-Retrofit-App-Naruto-main\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "286,55,102,149,196,241,328",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "323,97,144,191,236,281,365"
+                    },
+                    "to": {
+                        "startLines": "5,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "370,675,722,769,816,861,906",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "407,717,764,811,856,901,943"
+                    }
+                },
+                {
                     "source": "C:\\Users\\gabri\\.gradle\\caches\\8.9\\transforms\\65bd49d5d0e4817f35ad58bf808a5094\\transformed\\ui-graphics-release\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -123,24 +157,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\gabri\\Documents\\GitHub\\pr06-retrofit-gabriel-y-xavi\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "286,55,102,149,196,241,328",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "323,97,144,191,236,281,365"
-                    },
-                    "to": {
-                        "startLines": "5,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "370,675,722,769,816,861,906",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "407,717,764,811,856,901,943"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\gabri\\Documents\\GitHub\\pr06-retrofit-gabriel-y-xavi\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\gabri\\Pictures\\android-studio-Retrofit-App-Naruto-main\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -228,23 +245,6 @@
                         "endLines": "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,79,80,108,120,121,122,123,124,125,126,188,189,190,191,192,193,194,195,197,198,199,204,220,224",
                         "endColumns": "58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,73,57,54,50,54,52,64,53,65,100,57,51,59,61,53,49,53,45,45,41,39,46,35,89,12,12,12",
                         "endOffsets": "2681,2740,2800,2860,2920,2980,3040,3100,3160,3220,3280,3340,3399,3459,3519,3579,3639,3699,3759,3819,3879,3939,3999,4058,4118,4178,4237,4296,4355,4414,4473,4532,4606,4664,4719,4951,5006,6487,7339,7393,7459,7560,7618,7670,7730,12233,12287,12337,12391,12437,12483,12525,12565,12683,12719,12809,13032,14011,14206"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\gabri\\Documents\\GitHub\\pr06-retrofit-gabriel-y-xavi\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "88",
-                        "endOffsets": "140"
-                    },
-                    "to": {
-                        "startLines": "236",
-                        "startColumns": "4",
-                        "startOffsets": "14969",
-                        "endColumns": "87",
-                        "endOffsets": "15052"
                     }
                 },
                 {
