@@ -43,7 +43,7 @@ fun MyRecyclerView(myViewModel: APIViewModel) {
         is ApiState.Success -> {
             val data = (state as ApiState.Success).data
             LazyColumn {
-                items(data.characters) { character ->
+                items(data.results) { character ->
                     CharacterItem(character = character)
                 }
             }

@@ -1,6 +1,7 @@
 package com.example.retrofitapp.view
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -44,13 +45,25 @@ fun CharacterItem(character: Result) {
                     .size(100.dp)
                     .clip(RoundedCornerShape(8.dp))
             )
-            Text(
-                text = character.name,
-                style = MaterialTheme.typography.bodyLarge,
+            Column(
                 modifier = Modifier
                     .padding(start = 16.dp)
                     .weight(1f)
-            )
+            ) {
+                Text(
+                    text = character.name,
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.primary
+                )
+                Text(
+                    text = "Status: ${character.status}",
+                    style = MaterialTheme.typography.bodyMedium
+                )
+                Text(
+                    text = "Species: ${character.species}",
+                    style = MaterialTheme.typography.bodyMedium
+                )
+            }
         }
     }
 }

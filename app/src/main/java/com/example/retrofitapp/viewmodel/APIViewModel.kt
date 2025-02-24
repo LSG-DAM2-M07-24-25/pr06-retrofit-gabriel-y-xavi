@@ -27,31 +27,25 @@ class APIViewModel : ViewModel() {
 
     fun getCharacters() {
         _apiState.value = ApiState.Loading
-        Log.d("APIViewModel", "Starting to fetch characters")
         
         viewModelScope.launch {
             try {
                 val response = repository.getAllCharacters()
-                Log.d("APIViewModel", "Response received: ${response.isSuccessful}")
-                
                 if (response.isSuccessful) {
                     response.body()?.let { data ->
-                        if (data.characters.isNotEmpty()) {
-                            Log.d("APIViewModel", "Characters received: ${data.characters.size}")
-                            Log.d("APIViewModel", "First character image URL: ${data.characters.firstOrNull()?.image}")
-                            _apiState.value = ApiState.Success(data)
-                        } else {
-                            _apiState.value = ApiState.Error("No se encontraron personajes")
-                        }
+                        Log.d("APIViewModel", "Data received: $data")
+                        _apiState.value = ApiState.Success(data)
                     } ?: run {
                         _apiState.value = ApiState.Error("No se recibieron datos")
+                        Log.e("APIViewModel", "Response body is null")
                     }
                 } else {
                     _apiState.value = ApiState.Error("Error: ${response.code()} - ${response.message()}")
+                    Log.e("APIViewModel", "Error response: ${response.code()} - ${response.message()}")
                 }
             } catch (e: Exception) {
-                Log.e("APIViewModel", "Error fetching characters", e)
                 _apiState.value = ApiState.Error("Error de red: ${e.localizedMessage ?: "Error desconocido"}")
+                Log.e("APIViewModel", "Exception while fetching characters", e)
             }
         }
     }

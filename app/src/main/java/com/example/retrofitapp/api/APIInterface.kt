@@ -6,16 +6,15 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
-import retrofit2.http.Url
 import java.util.concurrent.TimeUnit
 
 interface APIInterface {
 
-    @GET("characters")
+    @GET("character")
     suspend fun getCharacters(): Response<Data>
 
     companion object {
-        private const val BASE_URL = "https://dattebayo-api.onrender.com/"
+        private const val BASE_URL = "https://rickandmortyapi.com/api/"
         
         fun create(): APIInterface {
             val client = OkHttpClient.Builder()
