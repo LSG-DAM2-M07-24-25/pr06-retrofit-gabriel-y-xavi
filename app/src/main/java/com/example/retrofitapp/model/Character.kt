@@ -2,15 +2,10 @@ package com.example.retrofitapp.model
 
 data class Character(
     val id: Int,
+    val images: List<String>,
+    val jutsu: List<String>,
     val name: String,
-    val status: String,
-    val species: String,
-    val type: String,
-    val gender: String,
-    val origin: String,
-    val location: String,
-    val url: String,
-    val created: String,
-    val results: List<Result>,
-    val image: List<String>
+    val natureType: List<String>,
+    val tools: List<String>,
+    val uniqueTraits: List<String>
 )
