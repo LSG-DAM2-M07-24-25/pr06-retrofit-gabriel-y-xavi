@@ -49,8 +49,6 @@ It is necessary to add Internet access permissions in the [AndroidManifest.xml](
 - Implements **MVVM** with **LiveData** and **Retrofit** for network requests.
 - Uses **Glide** to load character images efficiently.
 
-# Screenshot
-<img src="app/src/main/res/drawable/screenshot_rick_morty.png" alt="App activity" width="300"/>
 
 ---
 # References
