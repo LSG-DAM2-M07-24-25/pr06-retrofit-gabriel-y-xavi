@@ -1,4 +1,5 @@
-# Android App with Retrofit LiveData and MVVM
+# Rick and Morty Android App with Retrofit, LiveData, and MVVM
+
 ## Android Studio Version
 Android Studio Ladybug | 2024.2.1 Patch 2
 
@@ -6,26 +7,26 @@ Android Studio Ladybug | 2024.2.1 Patch 2
 Kotlin with JetPack Compose
 
 ## Purpose
-This app is a demo of the use of **Retrofit** for accessing API REST using **MVVM** paradigm and **LiveData**.
+This app is a demo showcasing the use of **Retrofit** for accessing the **Rick and Morty API**, implementing the **MVVM** architecture and utilizing **LiveData**.
 
 ---
 
 # Gradle dependencies
-It is necessary to add the following dependencies in the file [`app/build.gradle.kts`](app/build.gradle.kts) (Module :app) level:
+It is necessary to add the following dependencies in the [`app/build.gradle.kts`](app/build.gradle.kts) (Module :app) level:
 
-``` bash
-   //LIVEDATA
+```kotlin
+   // LIVEDATA
     implementation("androidx.compose.runtime:runtime-livedata:1.7.5")
-    //RETROFIT
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
-    //CORRUTINES
+    // RETROFIT
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
+    // COROUTINES
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    //GLIDE
+    // GLIDE
     implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+    // TESTS
     testImplementation("junit:junit:4.13.2")
-    //TESTS
     testImplementation("io.mockk:mockk:1.12.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
@@ -36,16 +37,20 @@ It is necessary to add the following dependencies in the file [`app/build.gradle
 ```
 
 # AndroidManifest.xml
-It is necessary to add Internet access permissions in [AndroidManifest.xml](app/src/main/AndroidManifest.xml) file:
+It is necessary to add Internet access permissions in the [AndroidManifest.xml](app/src/main/AndroidManifest.xml) file:
 
-``` bash
+```xml
   <uses-permission android:name="android.permission.INTERNET"/>
 ```
 
-# Screenshot
-<img src="app/src/main/res/drawable/screenshot_20250119_223050.png" alt="App activity" width="300"/>
+# Features
+- Fetches a list of characters from the **Rick and Morty API**.
+- Displays character names, status, and images using **Jetpack Compose**.
+- Implements **MVVM** with **LiveData** and **Retrofit** for network requests.
+- Uses **Glide** to load character images efficiently.
+
 
 ---
 # References
-- **APIREST credits**: [https://cursokotlin.com/mvvm-en-android-con-kotlin-livedata-y-view-binding-android-architecture-components/](https://github.com/viniciusschuelter/dattebayo-api)
-- **Project credits**: Dani Santiago
+- **APIREST credits**: [https://rickandmortyapi.com/](https://rickandmortyapi.com/)
+- **Project credits**: Xavier Moreno Navarro
