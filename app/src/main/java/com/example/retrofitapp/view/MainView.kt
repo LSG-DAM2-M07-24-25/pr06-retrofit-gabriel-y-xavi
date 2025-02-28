@@ -75,7 +75,7 @@ fun MyRecyclerView(myViewModel: APIViewModel) {
             repeatMode = RepeatMode.Reverse
         ), label = ""
     )
-
+    
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -171,7 +171,7 @@ fun MyRecyclerView(myViewModel: APIViewModel) {
                     val filteredResults = data.results.filter { character ->
                         character.name.contains(searchQuery, ignoreCase = true)
                     }
-
+                    
                     if (filteredResults.isEmpty() && searchQuery.isNotEmpty()) {
                         Box(
                             modifier = Modifier.fillMaxSize(),
